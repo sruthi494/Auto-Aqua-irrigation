@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Irrigation Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="styleDashboard.css"> -->
+  <!-- <link rel="stylesheet" href="file:///C:/Users/singh_web/OneDrive/Desktop/msd/style.css"> -->
+
+</head>
+<body>
+    <header>
+  <h1>Smart Irrigation System</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <!-- <a href="login.html">Login</a> -->
+    <a href="dashboard.html">Dashboard</a>
+    <!-- <a href="profile.html">Profile</a> -->
+    <a href="about.html">About</a>
+  </nav>
+</header>
+  <div class="container">
+    <h1>🌿 Smart Irrigation System</h1>
+    
+    <div class="status">
+      <label>Soil Moisture:</label>
+      <div class="moisture-bar">
+        <div class="moisture-fill" id="moistureFill"></div>
+      </div>
+      <p id="moistureText">65%</p>
+    </div>
+    
+    <div class="controls">
+      <button id="pumpBtn">Pump: OFF</button>
+      <label>
+        <input type="checkbox" id="autoMode"/> Auto Mode
+      </label>
+    </div>
+    
+    <p>Last Watered: <span id="lastWatered">--:--</span></p>
+    
+    <div class="tip">
+      <strong>💡 Water Saving Tip:</strong>
+      <p id="tipText">Water your plants early in the morning.</p>
+    </div>
+    
+    <div class="chart-section">
+      <h3>📊 Moisture History</h3>
+      <canvas id="moistureChart" height="150"></canvas>
+    </div>
+  </div>
+    <footer>
+    <p>&copy; 2025 Smart Irrigation System. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
